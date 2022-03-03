@@ -2,11 +2,11 @@ import { useState } from "react";
 import { AddCategory } from "../AddCategory/AddCategory";
 import { GifGrid } from "../GifGrid/GifGrid";
 
-export const GifExpertApp = () => {
-  const [categorias, setCategorias] = useState(['One Punch']);
+export const GifExpertApp = ({ defaultCategorias = ["One Punch"] }) => {
+  const [categorias, setCategorias] = useState(defaultCategorias);
 
   //#region Funciones
-  
+
   //#endregion
 
   return (
