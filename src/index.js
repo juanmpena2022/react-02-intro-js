@@ -13,9 +13,10 @@ import { MemoHook } from "./06-hook-app/components/06-memos/MemoHook";
 import { Memorize } from "./06-hook-app/components/06-memos/Memorize";
 import { Padre } from "./06-hook-app/components/07-tarea-memo/Padre";
 import { TodoApp } from "./06-hook-app/components/08-useReducer/TodoApp";
+import { MainApp } from "./06-hook-app/components/09-useContext/MainApp";
 import { HookApp } from "./06-hook-app/components/HookApp/HookApp";
 
 import "./index.css";
 
 const divRoot = document.getElementById("root");
-ReactDOM.render(<TodoApp />, divRoot);
+ReactDOM.render(<MainApp />, divRoot);
