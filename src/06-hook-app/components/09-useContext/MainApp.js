@@ -4,7 +4,7 @@ import { UserContext } from "./UserContext";
 
 export const MainApp = () => {
   const [user, setUser] = useState(null);
-  var userContextProviderValue = { user, setUser };
+  const userContextProviderValue = { user, setUser };
 
   return (
     <UserContext.Provider value={userContextProviderValue}>
