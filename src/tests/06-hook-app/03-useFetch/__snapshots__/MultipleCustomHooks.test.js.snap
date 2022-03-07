@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas del componente <MultipleCustomHooks /> snapshot 1`] = `
+<Fragment>
+  <h1>
+    MultipleCustomHooks
+  </h1>
+  <hr />
+  <div
+    className="alert alert-info text-center"
+  >
+    Loading...
+  </div>
+  <button
+    className="btn btn-primary"
+    onClick={[Function]}
+  >
+    Siguiente
+  </button>
+</Fragment>
+`;
+
+exports[`pruebas del componente <MultipleCustomHooks /> snapshot debe mostrar la informacion 1`] = `
+<Fragment>
+  <h1>
+    MultipleCustomHooks
+  </h1>
+  <hr />
+  <blockquote
+    className="blockquote text-right"
+  >
+    <p
+      className="mb-0"
+    >
+      Hola Mundo!!!
+    </p>
+    <footer
+      className="blockquote-footer"
+    >
+      juan
+    </footer>
+  </blockquote>
+  <button
+    className="btn btn-primary"
+    onClick={[Function]}
+  >
+    Siguiente
+  </button>
+</Fragment>
+`;

@@ -23,18 +23,16 @@ export const useFetch = (url) => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        setTimeout(() => {
-          if (isMountedRef.current) {
-            console.log("se llamo setState");
-            setState({
-              data: data,
-              loading: false,
-              error: null,
-            });
-          } else {
-            console.log("no se llamo setState");
-          }
-        }, 1000);
+        if (isMountedRef.current) {
+          console.log("se llamo setState");
+          setState({
+            data: data,
+            loading: false,
+            error: null,
+          });
+        } else {
+          console.log("no se llamo setState");
+        }
       })
       .catch((error) => {
         setState({
