@@ -1,4 +1,5 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
+import { getHeroImgSrcById } from "../../helpers/heroHelper";
 
 export const HeroCard = ({
   id,
@@ -8,14 +9,16 @@ export const HeroCard = ({
   first_appearance,
   characters,
 }) => {
-  const imgPath = `/assets/07-heroes-app-img/${id}.jpg`;
-
   return (
     <div className="col animate__animated animate__fadeIn">
       <div className="card">
         <div className="row no-gutters">
           <div className="col-4">
-            <img src={imgPath} className="card-img" alt={superhero} />
+            <img
+              src={getHeroImgSrcById(id)}
+              className="card-img"
+              alt={superhero}
+            />
           </div>
           <div className="col-8">
             <div className="card-body">

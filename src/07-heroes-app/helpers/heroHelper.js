@@ -17,7 +17,7 @@ const getHeroesByPublisher = (publisher) => {
 
 const getHeroesByName = (name = "") => {
   console.log("getHeroesByName called");
-  
+
   if (name === "") {
     return [];
   }
@@ -27,4 +27,8 @@ const getHeroesByName = (name = "") => {
   );
 };
 
-export { getHeroById, getHeroesByPublisher, getHeroesByName };
+const getHeroImgSrcById = (id) => {
+  return `/assets/07-heroes-app-img/${id}.jpg`;
+};
+
+export { getHeroById, getHeroesByPublisher, getHeroesByName, getHeroImgSrcById };
