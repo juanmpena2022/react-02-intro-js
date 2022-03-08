@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HeroesApp } from "./07-heroes-app/HeroesApp";
+import { JournalApp } from "./08-journal-app/JournalApp";
 
-import "./index.css";
+import "./08-journal-app/style/style.scss";
 
 const divRoot = document.getElementById("root");
-ReactDOM.render(<HeroesApp />, divRoot);
+ReactDOM.render(<JournalApp />, divRoot);
